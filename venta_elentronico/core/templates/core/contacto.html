@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnobot.ec</title>
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/app.css '%}" />
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <pre id="t">TECNOBOT EC </pre>
+                </a>
+                <div class="mobile-menu">
+                    <img src="{% static 'core/img/barras.svg'%}" alt="icono menu responsive">
+                </div>
+
+                <div class="derecha">
+                    <img class="dark-mode-boton" src=" {% static 'core/img/dark-mode.svg'%} ">
+                    <nav class="navegacion">
+                        <a href="{% url 'home' %}">Inicio</a>
+                        <a href="{% url 'about' %}">Nosotros</a>
+                        <a href="{% url 'contact' %}">Contactanos</a>
+                        <a href="{% url 'portfolio' %}">Productos</a>
+          
+                    </nav>
+                </div>
+                
+            </div> <!--.barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion">
+        <h1>Contacto</h1>
+
+        <picture>            
+            <source class="ho" srcset="{% static 'core/img/contact.png'%}" type="image/jpeg">
+            <img class="ho" loading="lazy" src="{% static 'core/img/contact.png'%}" alt="Imagen Contacto">
+        </picture>
+
+        <h2>Llene el formulario de Contacto</h2>
+
+        <form class="formulario" action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Su Nombre" id="nombres" name="nombres">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Su Email" id="emails" name="emails">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Su Teléfono" id="telefono" name="telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </fieldset>
+
+            
+            <input type="submit" value="Enviar"  class="boton-verde"  >
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+            <a href="{% url 'home' %}">Inicio</a>
+             <a href="{% url 'about' %}">Nosotros</a>
+              <a href="{% url 'contact' %}">Contactanos</a>
+              <a href="{% url 'portfolio' %}">Productos</a>
+
+            </nav>
+        </div>
+
+        <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
+    </footer>
+
+    <script src="{% static 'core/js/bundle.min.js'%}"></script>
+  
+</body>
+</html>

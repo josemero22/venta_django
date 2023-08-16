@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnobot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/app.css '%}" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="/">
+            <pre id="t">TECNOBOT EC </pre>
+          </a>
+
+          <div class="mobile-menu">
+            <img
+              src="{% static 'core/img/barras.svg'%}"
+              alt="icono menu responsive"
+            />
+          </div>
+          <div class="derecha">
+            <img
+              class="dark-mode-boton"
+              src=" {% static 'core/img/dark-mode.svg'%} "
+            />
+            <nav class="navegacion">
+              <a href="{% url 'home' %}">Inicio</a>
+              <a href="{% url 'about' %}">Nosotros</a>
+              <a href="{% url 'contact' %}">Contactanos</a>
+              <a href="{% url 'portfolio' %}">Productos</a>
+            </nav>
+          </div>
+        </div>
+        <!--.barra-->
+      </div>
+    </header>
+
+    <main class="contenedor seccion">
+      <h1>Conoce sobre Nosotros</h1>
+
+      <div class="contenido-nosotros">
+        <div class="imagen">
+          <picture>
+            <source
+              srcset="{% static 'core/img/nosotros.jpg'%}"
+              type="image/jpeg"
+            />
+            <img
+              loading="lazy"
+              src="{% static 'core/img/nosotros.jpg'%}"
+              alt="Sobre Nosotros"
+            />
+          </picture>
+        </div>
+
+        <div class="texto-nosotros">
+          <blockquote>Más de 35 años en el mercado</blockquote>
+          <p>
+            Somos un gran empresa que esta en constante crecimiento estamos
+            orgullosos de nuestro gran crecimiento y por eso queremos agradecer
+            a todos nuestros cliente el gram apoyo que nos brindan.
+
+            En nuestro catálogo, encontrarás una amplia gama de dispositivos electrónicos de última generación, diseñados para satisfacer tus necesidades y superar tus expectativas. Desde smartphones que te mantendrán conectado con el mundo de manera instantánea y elegante, hasta computadoras portátiles ultrarrápidas que potenciarán tu productividad, nuestra pagina está repleta de opciones emocionantes.
+
+¿Eres un amante de la fotografía? No te pierdas nuestras cámaras y accesorios de alta calidad que capturarán momentos preciosos con una claridad asombrosa. Si disfrutas de entretenimiento en casa, nuestra selección de televisores de última tecnología y sistemas de sonido envolvente te sumergirán en experiencias visuales y auditivas inigualables.
+          </p>
+          <p>
+            Esperen proximas noticias tenemos grandes solpresas para ustedes.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="{% url 'home' %}">Inicio</a>
+          <a href="{% url 'about' %}">Nosotros</a>
+          <a href="{% url 'contact' %}">Contactanos</a>
+          <a href="{% url 'portfolio' %}">Productos</a>
+        </nav>
+      </div>
+
+      <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
+    </footer>
+
+    <script src="{% static 'core/js/bundle.min.js'%}"></script>
+  </body>
+</html>

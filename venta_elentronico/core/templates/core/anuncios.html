@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnobot.ec</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/app.css' %}" />
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="/">
+            <pre id="t">TECNOBOT EC </pre>
+          </a>
+
+          <div class="mobile-menu">
+            <img src="{% static 'core/img/barras.svg'%}" alt="icono menu responsive" />
+          </div>
+
+         
+          <div class="derecha">
+            <img class="dark-mode-boton" src="{% static 'core/img/dark-mode.svg'%}" />
+            <nav class="navegacion">
+              <a href="{% url 'about' %}">Nosotros</a>
+              <a href="{% url 'contact' %}">Contactanos</a>
+              <a href="{% url 'portfolio' %}">Productos</a>
+
+            </nav>
+          </div>
+        </div>
+        <!--.barra-->
+      </div>
+    </header>
+
+    <main class="contenedor seccion">
+      <section class="seccion contenedor">
+        <h2>Productos Disponibles</h2>
+
+        <div class="contenedor-anuncios">
+          <div class="anuncio">
+            <picture>
+              <img
+                loading="lazy"
+                src="{% static 'core/img/acer.jpg'%}"
+                alt="anuncio"
+              />
+            </picture>
+
+            <div class="contenido-anuncio">
+              <h3>Laptop de ultima tecnologia</h3>
+              <p>
+                Laptop acer de ultima tecnologia procesador intel de doceava
+                generacion, 32 GB de ram , 1Tb de almacenamiento interno en
+                formato M.2
+              </p>
+              <p class="precio">$1,500.00</p>
+
+              <ul class="iconos-caracteristicas">
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/intel.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/cargar.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/memoria.svg'%}"
+                    alt="icono memoria"
+                  />
+                </li>
+              </ul>
+
+              <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+              </a>
+            </div>
+          </div>
+
+          <div class="anuncio">
+            <picture>
+              <img
+                loading="lazy"
+                src="{% static 'core/img/xiomi.webp'%}"
+                alt="anuncio"
+              />
+            </picture>
+
+            <div class="contenido-anuncio">
+              <h3>Celular Xiaomi</h3>
+              <p>
+                Celular de la marca China xiomi de exelente calidad y precio
+                economico para todo publico especificaciones.
+              </p>
+              <p class="precio">$200.00</p>
+
+              <ul class="iconos-caracteristicas">
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/calidad.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/cargar.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/dinero.svg'%}"
+                    alt="icono memoria"
+                  />
+                </li>
+              </ul>
+
+              <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+              </a>
+            </div>
+          </div>
+
+          <div class="anuncio">
+            <picture>
+              <img
+                loading="lazy"
+                src="{% static 'core/img/h1.webp'%}"
+                alt="anuncio"
+              />
+            </picture>
+
+            <div class="contenido-anuncio">
+              <h3>Reloj intelijente</h3>
+              <p>
+                Si buscas un reloj inteligente y varato esta es tu mejor opcion
+                larga duracion de la bateria cuenta con una carga inalambrica
+              </p>
+              <p class="precio">10.00</p>
+
+              <ul class="iconos-caracteristicas">
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/cargar.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/memoria.svg'%}"
+                    alt="icono memoria"
+                  />
+                </li>
+              </ul>
+
+              <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+              </a>
+            </div>
+          </div>
+
+          <div class="anuncio">
+            <picture>
+              <img
+                loading="lazy"
+                src="{% static 'core/img/mac.jpg'%}"
+                alt="anuncio"
+              />
+            </picture>
+
+            <div class="contenido-anuncio">
+              <h3>MacBook</h3>
+              <p>
+                Si busca busca mas potencia para editar videos o para cualquier
+                trabajo pesado le recomendamos la MacBook Pro Max
+              </p>
+              <p class="precio">$1,300.00</p>
+
+              <ul class="iconos-caracteristicas">
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/calidad.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/cargar.svg'%}"
+                    alt="icono intel"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="icono"
+                    loading="lazy"
+                    src="{% static 'core/img/memoria.svg'%}"
+                    alt="icono memoria"
+                  />
+                </li>
+              </ul>
+
+              <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+              <a href="{% url 'about' %}">Nosotros</a>
+              <a href="{% url 'contact' %}">Contactanos</a>
+              <a href="{% url 'portfolio' %}">Productos</a>
+
+        </nav>
+      </div>
+
+      <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
+    </footer>
+
+    <script src="{% static 'core/js/bundle.min.js'%}"></script>
+  </body>
+</html>

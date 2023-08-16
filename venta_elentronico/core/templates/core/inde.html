@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> {% block title %}{% endblock %}Tecnobot.ec</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/app.css '%}" />
+  
+  </head>
+  <body>
+    <header class="header inicio">
+              
+
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="{% url 'home' %}">
+            <pre id="t">TECNOBOT EC </pre>
+          </a>
+
+
+          <div class="derecha">
+            <img class="dark-mode-boton" src="{% static 'core/img/dark-mode.svg'%}" />
+            <nav class="navegacion">
+              <a href="{% url 'about' %}">Nosotros</a>
+              <a href="{% url 'contact' %}">Contactanos</a>
+              <a href="{% url 'portfolio' %}">Productos</a>
+                      
+
+            </nav>
+          </div>
+        </div>
+
+
+        <h1>Los mejores productos electronicos</h1>
+      </div>
+    </header>
+
+    <section class="seccion contenedor">
+      <h2>Productos Disponibles</h2>
+
+      <div class="contenedor-anuncios">
+        <div class="anuncio">
+          <picture>
+            <img loading="lazy" src="{% static 'core/img/acer.jpg'%}" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Laptop de ultima tecnologia</h3>
+            <p>
+              Laptop acer de ultima tecnologia procesador intel de doceava
+              generacion, 32 GB de ram , 1Tb de almacenamiento interno en
+              formato M.2
+            </p>
+            <p class="precio">$1,500.00</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/intel.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/cargar.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/memoria.svg'%}"
+                  alt="icono memoria"
+                />
+              </li>
+            </ul>
+
+            <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+            </a>
+          </div>
+       
+        </div>
+
+        <div class="anuncio">
+          <picture>
+            <img loading="lazy" src="{% static 'core/img/xiomi.webp'%}" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Celular Xiaomi</h3>
+            <p>
+              Celular de la marca China xiomi de exelente calidad y precio
+              economico para todo publico especificaciones.
+            </p>
+            <p class="precio">$200.00</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/calidad.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/cargar.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/dinero.svg'%}"
+                  alt="icono memoria"
+                />
+              </li>
+            </ul>
+
+            <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+            </a>
+          </div>      
+        </div>
+
+
+       
+        <div class="anuncio">
+          <picture>
+            <img loading="lazy" src="{% static 'core/img/h1.webp'%}" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Reloj intelijente</h3>
+            <p>
+             Si buscas un reloj inteligente y varato esta es tu mejor opcion larga duracion de la bateria cuenta con una carga inalambrica
+            </p>
+            <p class="precio">10.00</p>
+
+            <ul class="iconos-caracteristicas">
+          
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/cargar.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/memoria.svg'%}"
+                  alt="icono memoria"
+                />
+              </li>
+            </ul>
+
+            <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+            </a>
+          </div>
+       
+        </div>
+
+        <div class="anuncio">
+          <picture>
+            <img loading="lazy" src="{% static 'core/img/mac.jpg'%}" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>MacBook</h3>
+            <p>
+              Si busca busca mas potencia para editar videos o para cualquier
+              trabajo pesado le recomendamos la MacBook Pro Max
+            </p>
+            <p class="precio">$1,300.00</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/calidad.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/cargar.svg'%}"
+                  alt="icono intel"
+                />
+              </li>
+
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="{% static 'core/img/memoria.svg'%}"
+                  alt="icono memoria"
+                />
+              </li>
+            </ul>
+
+            <a href="{% url 'plantilla' %}" class="boton-amarillo-block">
+                Ver Producto
+            </a>
+          </div>
+       
+        </div>
+
+
+
+        
+      </div>
+    
+      <div class="alinear-derecha">
+        <a href="{% url 'portfolio' %}" class="boton-verde">Ver más</a>
+      </div>
+    </section>
+
+    <section class="imagen-contacto">
+      <h2>Responda el siguiente formulario  </h2>
+      <p>
+        Llena el formulario de contacto y para un acesoramiento personalizado
+      </p>
+      <a href="{% url 'contact' %}" class="boton-amarillo">Contactános</a>
+    </section>
+
+    <div class="contenedor seccion seccion-inferior">
+      <section class="blog">
+        <h3>Nuestro Blog</h3>
+
+        <article class="entrada-blog">
+          <div class="imagen">
+            <picture>
+              <img
+                loading="lazy"
+                src="{% static 'core/img/blog.png'%}"
+                alt="Texto Entrada Blog"
+              />
+            </picture>
+          </div>
+
+          <div class="texto-entrada">
+            <a href="{% url 'plantilla' %}">
+              <h4>Consejos de utilidad</h4>
+              <p class="informacion-meta">
+                Escrito el: <span>04/01/2023</span> por: <span>Marcus</span>
+              </p>
+
+              <p>Consejos para la eleción</p>
+            </a>
+          </div>
+        </article>
+
+        <article class="entrada-blog">
+          <div class="imagen">
+            <picture>
+              <img
+                loading="lazy"
+                src="{% static 'core/img/dudas.jpg' %}"
+                alt="Texto Entrada Blog"
+              />
+            </picture>
+          </div>
+
+          <div class="texto-entrada">
+            <a href="{% url 'plantilla' %}">
+              <h4>¿ Tiene dudas ?</h4>
+              <p class="informacion-meta">
+                Escrito el: <span>20/05/2022</span> por: <span>Roxana</span>
+              </p>
+
+              <p>
+                Lea esta guía si tiene dudas sobre su eleccion .
+              </p>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="testimoniales">
+        <h3>Reseñas</h3>
+
+        <div class="testimonial">
+          <blockquote>
+            La interfaz es  muy agradable , muy buena atención cuenta con un gram
+            acesor que me ayudo a elejir mi el producto que mejor me conviene me ayudo y respondio todas     mis dudas.
+          </blockquote>
+          <p>- Dolorez de la Cruz</p>
+        </div>
+      </section>
+    </div>
+
+
+ 
+
+    <footer class="footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+        <a href="{% url 'about' %}">Nosotros</a>
+        <a href="{% url 'contact' %}">Contactanos</a>
+        <a href="{% url 'portfolio' %}">Productos</a>
+
+        </nav>
+      </div>
+
+      <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
+    </footer>
+    <script src="{% static 'core/js/bundle.min.js'%}"></script>
+  </body>
+</html>
